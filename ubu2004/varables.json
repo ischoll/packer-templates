@@ -1,0 +1,14 @@
+{
+	"vsphere-server": "FQDN or IP",
+	"vsphere-user": "USER",
+	"vsphere-password": "PASS",
+	"vsphere-datacenter": "DATACENTER",
+	"vsphere-cluster": "CLUSTER",
+	"vsphere-network": "NETWORK",
+	"vsphere-datastore": "DATASTORE",
+	"vm-name": "ubnt2004-{{timestamp}}",
+	"vm-cpu-num": "1",
+	"vm-mem-size": "1024",
+	"vm-disk-size": "25600",
+	"iso_url": "[DATASTORE] path-to-iso"
+}

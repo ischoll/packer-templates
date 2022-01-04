@@ -1,0 +1,29 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US
+  keyboard:
+    layout: en
+    variant: us
+  network:
+    network:
+      version: 2
+      ethernets:
+        ens192:
+          dhcp4: true
+  storage:
+    layout:
+      name: lvm
+  identity:
+    hostname: CHANGEME
+    username: youruser
+    password: "Replace with result of "mkpasswd -m sha-512 --rounds=4096"
+  ssh:
+    install-server: yes
+    allow-pw: true
+    authorized-keys:
+      - COPY IN YOUR PUBLIC KEY
+  user-data:
+    disable_root: false
+  late-commands:
+    - echo 'youruser ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/youruser
