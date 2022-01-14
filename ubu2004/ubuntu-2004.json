@@ -30,8 +30,8 @@
       "notes": "Built with Packer",
       "convert_to_template": false,
 
-      "ssh_username": "CHANGEME",
-      "ssh_password": "CHANGME",
+      "ssh_username": "youruser",
+      "ssh_password": "CHANGME and remember to hash in user-data",
       "ssh_timeout": "20m",
       "ssh_handshake_attempts": "100",
 
@@ -45,7 +45,7 @@
         " autoinstall<wait2> ds=nocloud;",
         "<wait><enter><wait45s>yes<enter>"
       ],
-      "shutdown_command": "echo 'ubuntu'|sudo -S shutdown -P now"
+      "shutdown_command": "echo 'youruser'|sudo -S shutdown -P now"
     }
   ]
 }
