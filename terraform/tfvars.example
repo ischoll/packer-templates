@@ -1,0 +1,27 @@
+# terraform.tfvars
+
+# First we define how many controller nodes and worker nodes we want to deploy
+control-count = "3"
+worker-count = "3"
+
+# VM Configuration
+vm-prefix = "xyz"
+vm-template-name = "zyx"
+vm-cpu = "1"
+vm-ram = "2048"
+vm-guest-id = "ubuntu64Guest"
+vm-datastore = "xyz"
+vm-network = "VM Network"
+vm-domain = "domain.local"
+
+# vSphere configuration
+vsphere-vcenter = "xyz"
+vsphere-unverified-ssl = "true"
+vsphere-datacenter = "xyz"
+vsphere-cluster = "xyz"
+
+# vSphere username defined in environment variable
+# export TF_VAR_vsphereuser=$(pass vsphere-user)
+
+# vSphere password defined in environment variable
+# export TF_VAR_vspherepass=$(pass vsphere-password)
