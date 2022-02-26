@@ -1,8 +1,12 @@
 ## 20220225
 
 [PyratLabs-ansible-K3s-role | Quickstart](https://github.com/PyratLabs/ansible-role-k3s/blob/main/documentation/quickstart-ha-cluster.md)
-[How to install Rancher on k3s](https://vmguru.com/2021/04/how-to-install-rancher-on-k3s/)
+
+[How to install Rancher on k3s](https://vmguru.com/2021/04/
+how-to-install-rancher-on-k3s/)
+
 [Get latest JerStack Cert-Manager manifest for above link](https://github.com/jetstack/cert-manager/releases/)
+
 TODO: Upload swap/security role
 
 ``` 
