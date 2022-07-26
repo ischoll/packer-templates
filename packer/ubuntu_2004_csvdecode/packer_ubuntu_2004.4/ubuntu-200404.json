@@ -30,8 +30,8 @@
       "notes": "Built via Packer",
       "convert_to_template": false,
 
-      "ssh_username": "ansible",
-      "ssh_password": "9inetynine_",
+      "ssh_username": "USERNAME - same username as in /http/user-data",
+      "ssh_password": "cleartext version of hashed password in /http/user-data",
       "ssh_timeout": "20m",
       "ssh_handshake_attempts": "100",
 
