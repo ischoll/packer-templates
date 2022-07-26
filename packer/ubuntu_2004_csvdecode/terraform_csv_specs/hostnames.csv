@@ -1,0 +1,7 @@
+hostname,ip
+sessionstate,10.0.5.110
+smtp1,10.0.5.111
+smtp2,10.0.5.112
+mysql-a,10.0.5.113
+mysql-b,10.0.5.114
+mysql-c,10.0.5.115

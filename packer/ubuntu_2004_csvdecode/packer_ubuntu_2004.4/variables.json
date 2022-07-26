@@ -1,0 +1,14 @@
+{
+    "vsphere-server": "IP or HOSTNAME",
+    "vsphere-user": "USERNAME",
+    "vsphere-password": "PASSWORD",
+    "vsphere-datacenter": "DATACENTER",
+    "vsphere-cluster": "CLUSTER",
+    "vsphere-network": "NETWORK",
+    "vsphere-datastore": "DATASTORE",
+    "vm-name": "2004.4-{{timestamp}}",
+    "vm-cpu-num": "1",
+    "vm-mem-size": "1024",
+    "vm-disk-size": "25600",
+    "iso_url": "[DATASTORE] Specific_ISO.iso"
+}

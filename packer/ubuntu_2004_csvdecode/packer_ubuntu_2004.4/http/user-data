@@ -1,0 +1,43 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US
+  keyboard:
+    layout: en
+    variant: us
+  network:
+    network:
+      version: 2
+      ethernets:
+        ens192:
+          dhcp4: true
+  storage:
+    layout:
+      name: lvm
+  identity:
+    hostname: HOSTNAME
+    username: USERNAME
+    password: COPY HASHED PASSWORD #try Docker (docker run --rm -ti alpine:latest mkpasswd -m sha512)
+  ssh:
+    install-server: yes
+    allow-pw: true
+    authorized-keys:
+      - COPY PUBLIC SSH KEY
+  user-data:
+    disable_root: false
+  late-commands:
+    - echo 'USERNAME ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/USERNAME
+
+#cloud-config
+# Update apt database on first boot (run 'apt-get update').
+# Note, if packages are given, or package_upgrade is true, then
+# update will be done independent of this setting.
+#
+# Default: false
+package_update: true
+
+#cloud-config
+# Upgrade the instance on first boot
+#
+# Default: false
+package_upgrade: true
